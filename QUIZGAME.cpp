@@ -83,15 +83,15 @@ void quizgame::selection(char choice)
     home:
     system("cls");
     count=0;
-    for(i=1;i<=6;i++)
+    for(i=1;i<=7;i++)
     {
     system("cls");
     SetConsoleTextAttribute(color, 6);
     switch(i)
 	{
 	case 1:
-	cout<<"\n\n1.Which of the following is a Palindrome number?";
-	cout<<"\n\nA.42042\t\tB.101010\n\nC.23232\t\tD.01234\n";
+	cout<<"\n\n1.Which of the following is a Armstrong number?";
+	cout<<"\n\nA.42042\t\tB.101010\n\nC.23232\t\tD.371\n";
 	if (toupper(getch())=='C')
 {   SetConsoleTextAttribute(color, 10);
 	cout<<"\n\nCorrect Answer !!!\n";
@@ -173,7 +173,24 @@ void quizgame::selection(char choice)
 	getch();
 	break;
 }
-	case 6:
+case 6:
+    SetConsoleTextAttribute(color, 6);
+    cout<<"\n\n\n5.A file containing relatively permanent data is";
+    cout<<"\n\nA.Random file\t\tB.Transaction file\n\nC.Master file\t\tD.Sequential file\n";
+    if (toupper(getch())=='C')
+{   SetConsoleTextAttribute(color, 10);
+	cout<<"\n\nCorrect Answer!!!";
+	getch();
+	count++;
+    break;
+}
+    else
+{   SetConsoleTextAttribute(color, 4);
+	cout<<"\n\nWrong!!! The correct option  is B\n";
+	getch();
+	break;
+}
+	case 7:
 	SetConsoleTextAttribute(color, 6);
 	cout<<"\n\n6.Choose the Object oriented programming language from below.";
 	cout<<"\n\nA.C++\t\tB.Small talk\n\nC.Simula\t\D.All the above.\n";
